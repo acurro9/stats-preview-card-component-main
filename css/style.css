@@ -1,0 +1,170 @@
+:root{
+--Verydarkblue: hsl(233, 47%, 7%);
+--Darkdesaturatedblue: hsl(244, 38%, 16%);
+--Softviolet: hsl(277, 64%, 61%);
+--Softviolet2: hsl(277, 85%, 35%);
+--White: hsl(0, 0%, 100%);
+--Slightlytransparentwhite: hsla(0, 0%, 100%, 0.75);
+--Slightlytransparentwhite2: hsla(0, 0%, 100%, 0.6);
+}
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+Cree un nuevo softviolet2 modificando el otro para que se parezca mas al color del diseño*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+   *, *::before, *::after {
+    box-sizing: inherit;
+} 
+   
+body{
+    font-size: 15px;
+    background-color: var(--Verydarkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+main{
+    max-width: 80rem;
+    max-height: 40rem;
+    margin-top: 15%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Darkdesaturatedblue);
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 700px;
+}
+@media (min-width: 768px) {
+.card{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+} 
+}
+.letra{
+    width: 80%;
+    padding: 0 10px;
+}
+@media (min-width: 768px) {
+ .letra{
+    width: 50%;
+    padding: 0 50px;
+ }
+}
+.imagen{
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/image-header-mobile.jpg');
+    background-repeat: no-repeat;   
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;    
+}
+@media (min-width: 768px) {
+    .imagen{
+        background-image: url('../img/image-header-desktop.jpg');
+        height: 300px;
+        width: 70%;
+        margin-top: 0;
+        border-radius: 0 8px 8px 0;
+    }
+}
+.ima{
+    background-color: var(--Softviolet2);
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; 
+   
+}
+@media (min-width: 768px) {
+ .ima{
+    border-radius: 0 8px 8px 0;
+ }
+}
+h1{
+    color: var(--White);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+@media (min-width: 768px) {
+h1{
+    text-align: left;
+} 
+}
+h1 span {
+    color: var(--Softviolet);
+}
+.letra p{
+    color: var(--Slightlytransparentwhite);
+    font-size: 400;
+    font-size: 14px;
+    text-align: center;
+}
+@media (min-width: 768px) {
+.letra p{
+    text-align: left;
+    font-size: 12px;
+} 
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--White);
+    font-size: 2rem;
+}
+@media (min-width: 768px) {
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-top: 3rem;
+    font-size: 15px;
+} 
+}
+.stats div{
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 15px 0 25px 0;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40px;
+
+}
+.stats p{
+    color: var(--Slightlytransparentwhite2);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 10px;
+}
+.upper{
+    text-transform: uppercase;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--White);
+    margin-top: 30rem;
+}
+@media (min-width: 768px) {
+    .attribution{
+        margin-top: 50px;
+    }
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
