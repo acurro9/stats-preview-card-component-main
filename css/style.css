@@ -73,7 +73,7 @@ main{
     .imagen{
         background-image: url('../img/image-header-desktop.jpg');
         height: 300px;
-        width: 70%;
+        width: 50%;
         margin-top: 0;
         border-radius: 0 8px 8px 0;
     }
